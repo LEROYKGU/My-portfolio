@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KOUAKOU Guillaume Ulrick — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">KG<span>U</span></div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#skills">Compétences</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#projects">Projets</a></li>
+    <li><a href="#contact">Contacts</a></li>
+  </ul>
+  <div class="nav-right">
+    <!-- THEME TOGGLE -->
+    <div class="theme-toggle" role="group" aria-label="Choisir le thème">
+      <button class="theme-btn active" data-theme-target="dark"   title="Thème sombre">🌑</button>
+      <button class="theme-btn"        data-theme-target="light"  title="Thème clair">☀️</button>
+      <button class="theme-btn"        data-theme-target="midnight" title="Thème Midnight">🌌</button>
+    </div>
+    <div class="nav-burger" id="burger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Disponible pour de nouvelles opportunités</div>
+    <h1>Guillaume Kouakou<em>Ingénieur &amp; Data Scientist.</em></h1>
+    <p class="hero-desc">
+      Ingénieur des Sciences Exactes &amp; Modélisation – Big Data &amp; IA à l'INP-HB.
+      Certifié IBM Data Analyst et Google Cloud Professional ML Engineer.
+      <br>Ouvert au travail à distance et en freelance.
+    </p>
+    <div class="btn-group">
+      <a href="#projects" class="btn btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        Voir mes projets
+      </a>
+      <a href="#contact" class="btn btn-outline">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Me contacter
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">À propos</div>
+  <h2>Qui suis-je ?</h2>
+  <div class="section-divider"></div>
+  <div class="about-grid">
+    <div class="about-photo-wrap reveal">
+      <div class="about-photo">
+        <img src="photo/3.jpg" alt="Photo de Guillaume Kouakou">
+      </div>
+      <div class="about-frame"></div>
+    </div>
+
+    <div class="about-text reveal">
+      <br>
+      <p>
+        Élève ingénieur en Sciences Exactes et Modélisation, spécialisé en Big Data &amp; Intelligence Artificielle à l'INP-HB (Institut National Polytechnique Félix Houphouët-Boigny), Yamoussoukro.
+      </p>
+      <p>
+        Passionné par la data, l'intelligence artificielle et la résolution de problèmes complexes, je développe des compétences en analyse de données, machine learning et modélisation mathématique à travers des projets académiques et des travaux appliqués.
+      </p>
+      <p>Mes centres d'intérêt principaux :</p>
+      <ul class="interests-list">
+        <li>Valorisation des données &amp; systèmes intelligents</li>
+        <li>Optimisation par l'IA</li>
+        <li>Applications à impact social et économique</li>
+        <li>Architectures Big Data modernes</li>
+        <li>Économie comportementale &amp; biais cognitifs</li>
+      </ul>
+      <p>
+        Je cherche à évoluer dans des environnements innovants autour de la Data Science, du Machine Learning et des systèmes data-driven — à travers des collaborations à distance, des projets freelances et des opportunités internationales.
+      </p>
+    </div>
+  </div>
+  <div class="about-stats">
+    <div class="stat-card reveal">
+      <div class="stat-num">5+</div>
+      <div class="stat-label">Projets réalisés</div>
+    </div>
+    <div class="stat-card reveal">
+      <div class="stat-num">2+</div>
+      <div class="stat-label">Certifications obtenues</div>
+    </div>
+    <div class="stat-card reveal">
+      <div class="stat-num">2+</div>
+      <div class="stat-label">Années d'expérience</div>
+    </div>
+    <div class="stat-card reveal">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Passion &amp; engagement</div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-header reveal">
+    <div class="section-label">Expertise</div>
+    <h2 class="section-title">Mes compétences</h2>
+    <div class="section-divider"></div>
+    <p class="section-desc">Des technologies data aux systèmes intelligents, en passant par le développement et le design.</p>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <div class="skill-icon">🧠</div>
+      <div class="skill-name">Machine Learning &amp; IA</div>
+      <div class="skill-desc">Conception et entraînement de modèles prédictifs, réseaux de neurones et systèmes d'apprentissage automatique.</div>
+      <div class="skill-tags">
+        <span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">TensorFlow</span>
+      </div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon">📊</div>
+      <div class="skill-name">Data Analysis &amp; Viz</div>
+      <div class="skill-desc">Exploration, nettoyage et visualisation de données massives pour en extraire des insights actionnables.</div>
+      <div class="skill-tags">
+        <span class="tag">Pandas</span><span class="tag">Matplotlib</span><span class="tag">Power BI</span>
+      </div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon">☁️</div>
+      <div class="skill-name">Cloud &amp; Big Data</div>
+      <div class="skill-desc">Déploiement de pipelines de données et de modèles ML sur des infrastructures cloud modernes.</div>
+      <div class="skill-tags">
+        <span class="tag">Google Cloud</span><span class="tag">Spark</span><span class="tag">Hadoop</span>
+      </div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon">🎨</div>
+      <div class="skill-name">Frontend Development</div>
+      <div class="skill-desc">Création d'interfaces utilisateur modernes, responsives et accessibles pour des applications web.</div>
+      <div class="skill-tags">
+        <span class="tag">HTML/CSS</span><span class="tag">JavaScript</span><span class="tag">React</span>
+      </div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon">🛠️</div>
+      <div class="skill-name">No-Code / Low-Code</div>
+      <div class="skill-desc">Prototypage rapide et déploiement d'applications avec des outils modernes et accessibles.</div>
+      <div class="skill-tags">
+        <span class="tag">Bubble.io</span><span class="tag">Webflow</span><span class="tag">Make</span>
+      </div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon">📐</div>
+      <div class="skill-name">UX/UI &amp; Modélisation</div>
+      <div class="skill-desc">Conception d'expériences utilisateur et modélisation mathématique de systèmes complexes.</div>
+      <div class="skill-tags">
+        <span class="tag">Figma</span><span class="tag">MATLAB</span><span class="tag">LaTeX</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="section-label reveal">// 02 — Certifications &amp; Badges</div>
+  <h2 class="reveal">Mes accréditations</h2>
+  <div class="section-divider reveal"></div>
+
+  <div class="certs-grid">
+
+    <div class="cert-card reveal">
+      <div class="cert-badge-img">
+        <img src="bagdes/ibm-data-analyst-professional-certificate-v3 (1).png" alt="IBM Data Analyst">
+      </div>
+      <div class="cert-info">
+        <h3>IBM Data Analyst Professional Certificate</h3>
+        <div class="cert-issuer">Coursera · IBM</div>
+        <div class="cert-date">Avril 2026</div>
+      </div>
+      <a href="https://www.credly.com/badges/0d7383a0-aca6-495a-8636-9ae043d3a310/public_url" class="cert-link" target="_blank">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        Voir le certificat
+      </a>
+    </div>
+
+    <div class="cert-card reveal">
+      <div class="cert-badge-img">
+        <img src="bagdes/professional-machine-learning-engineer-certificatio.png" alt="Machine Learning Engineer">
+      </div>
+      <div class="cert-info">
+        <h3>Google Cloud Professional Machine Learning Engineer</h3>
+        <div class="cert-issuer">Google Cloud</div>
+        <div class="cert-date">14 Mai 2026</div>
+      </div>
+      <a href="https://www.credly.com/badges/438a5906-58cf-4001-a3c2-dea77d877bcb/public_url" class="cert-link" target="_blank">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        Voir le certificat
+      </a>
+    </div>
+
+    <div class="cert-card reveal">
+      <div class="cert-badge-img">
+        <img src="bagdes/applied-data-science-specialization-v3.1.png" alt="Applied Data Science">
+      </div>
+      <div class="cert-info">
+        <h3>Applied Data Science Specialization</h3>
+        <div class="cert-issuer">Coursera · IBM</div>
+        <div class="cert-date">Avril 2026</div>
+      </div>
+      <a href="#" class="cert-link" target="_blank">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        Voir le certificat
+      </a>
+    </div>
+
+    <div class="cert-card reveal">
+      <div class="cert-badge-img">
+        <img src="bagdes/python-project-for-ai-and-application-development.png" alt="Python AI App">
+      </div>
+      <div class="cert-info">
+        <h3>Building AI App with Python and Flask Specialization</h3>
+        <div class="cert-issuer">Coursera · IBM</div>
+        <div class="cert-date">Mars 2026</div>
+      </div>
+      <a href="https://www.credly.com/badges/a80aad81-9f98-4baa-a7cc-8b190985f5ac/public_url" class="cert-link" target="_blank">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        Voir le certificat
+      </a>
+    </div>
+
+    <div class="cert-card reveal">
+      <div class="cert-badge-img">
+        <img src="bagdes/data-analysis-with-python.png" alt="Data Analysis Python">
+      </div>
+      <div class="cert-info">
+        <h3>Data Analysis with Python</h3>
+        <div class="cert-issuer">Coursera · IBM</div>
+        <div class="cert-date">Mars 2026</div>
+      </div>
+      <a href="https://www.credly.com/badges/5982053f-47c6-4827-ad9f-fd8eb5be45b0/public_url" class="cert-link" target="_blank">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        Voir le certificat
+      </a>
+    </div>
+
+    <div class="cert-card reveal">
+      <div class="cert-badge-img">
+        <img src="bagdes/data-visualization-with-python.png" alt="Data Visualization Python">
+      </div>
+      <div class="cert-info">
+        <h3>Data Visualization with Python</h3>
+        <div class="cert-issuer">Coursera · IBM</div>
+        <div class="cert-date">Mars 2026</div>
+      </div>
+      <a href="https://www.credly.com/badges/98dec511-693f-48a8-89a3-22867dce43a6/public_url" class="cert-link" target="_blank">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        Voir le certificat
+      </a>
+    </div>
+
+    <div class="cert-card reveal">
+      <div class="cert-badge-img">
+        <img src="bagdes/data-analyst-capstone-project.png" alt="Data Analyst Capstone">
+      </div>
+      <div class="cert-info">
+        <h3>Data Analysis Capstone Project</h3>
+        <div class="cert-issuer">Coursera · IBM</div>
+        <div class="cert-date">Mars 2026</div>
+      </div>
+      <a href="https://www.credly.com/badges/3adff849-4dbd-479b-a7fa-590491d1194d/public_url" class="cert-link" target="_blank">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        Voir le certificat
+      </a>
+    </div>
+
+    <div class="cert-card reveal">
+      <div class="cert-badge-img">
+        <img src="bagdes/generative-ai-essentials-for-data-analytics.png" alt="Generative AI">
+      </div>
+      <div class="cert-info">
+        <h3>Generative AI Essentials for Data Analytics</h3>
+        <div class="cert-issuer">Coursera · IBM</div>
+        <div class="cert-date">Mars 2026</div>
+      </div>
+      <a href="https://www.credly.com/badges/37ce49f6-6d25-4210-983d-c8295dc90219/public_url" class="cert-link" target="_blank">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        Voir le certificat
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label reveal">// 03 — Projets</div>
+  <h2 class="reveal">Ce que je construis</h2>
+  <div class="section-divider reveal"></div>
+
+  <div class="projects-grid">
+
+    <!-- PROJECT 1 -->
+    <div class="project-card reveal">
+      <div class="project-header">
+        <div class="project-icon">🔍</div>
+        <div class="project-links">
+          <a href="#" class="icon-btn" title="GitHub" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://github.com/LEROYKGU/Crack-Detection-using-Deep-Learning-and-Knowledge-Distillation" class="icon-btn" title="Voir le repo" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">Crack Detection — Deep Learning &amp; Knowledge Distillation</div>
+        <p class="project-desc">
+          Détection automatique de fissures sur surfaces industrielles par vision par ordinateur. Utilisation de la distillation de connaissances pour compresser un modèle lourd en un modèle léger déployable en production.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">PyTorch</span>
+          <span class="tech-tag">CNN</span>
+          <span class="tech-tag">Knowledge Distillation</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card reveal">
+      <div class="project-header">
+        <div class="project-icon">🎓</div>
+        <div class="project-links">
+          <a href="#" class="icon-btn" title="GitHub" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://github.com/LEROYKGU/Success_DropOut-Prediction-for-student" class="icon-btn" title="Voir le repo" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">Student Success &amp; Dropout Prediction</div>
+        <p class="project-desc">
+          Modèle prédictif de réussite et d'abandon scolaire basé sur des données académiques et comportementales. Aide les établissements à identifier précocement les étudiants à risque et à adapter l'accompagnement.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Scikit-learn</span>
+          <span class="tech-tag">XGBoost</span>
+          <span class="tech-tag">Pandas</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card reveal">
+      <div class="project-header">
+        <div class="project-icon">😊</div>
+        <div class="project-links">
+          <a href="#" class="icon-btn" title="GitHub" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://github.com/LEROYKGU/Emotion-Detection-Project" class="icon-btn" title="Voir le repo" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">Emotion Detection Using API</div>
+        <p class="project-desc">
+          Application web de détection des émotions en temps réel via une API NLP. Analyse du texte et classification des sentiments (joie, colère, peur, tristesse…) avec retour visuel interactif.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Flask</span>
+          <span class="tech-tag">NLP</span>
+          <span class="tech-tag">Watson NLU</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 4 -->
+    <div class="project-card reveal">
+      <div class="project-header">
+        <div class="project-icon">🚀</div>
+        <div class="project-links">
+          <a href="#" class="icon-btn" title="GitHub" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://github.com/LEROYKGU/Data-Science-Project-Capstone" class="icon-btn" title="Voir le repo" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">Data Science Capstone — SpaceX Launch Prediction</div>
+        <p class="project-desc">
+          Projet capstone IBM prédit la réutilisation du booster Falcon 9 de SpaceX. Pipeline complet : collecte via API, nettoyage, analyse exploratoire, SQL, visualisation et classification ML.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">SQL</span>
+          <span class="tech-tag">Folium</span>
+          <span class="tech-tag">Plotly Dash</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 5 -->
+    <div class="project-card reveal">
+      <div class="project-header">
+        <div class="project-icon">🔄</div>
+        <div class="project-links">
+          <a href="#" class="icon-btn" title="GitHub" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://github.com/LEROYKGU/data-pipeline" class="icon-btn" title="Voir le repo" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">Data Pipeline</div>
+        <p class="project-desc">
+          Construction d'un pipeline ETL automatisé pour l'ingestion, la transformation et le chargement de données depuis plusieurs sources hétérogènes vers un entrepôt analytique centralisé.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">ETL</span>
+          <span class="tech-tag">Airflow</span>
+          <span class="tech-tag">PostgreSQL</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 6 -->
+    <div class="project-card reveal">
+      <div class="project-header">
+        <div class="project-icon">🌐</div>
+        <div class="project-links">
+          <a href="#" class="icon-btn" title="GitHub" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://github.com/LEROYKGU/Deep-Learning-Network-Traffic-Analysis" class="icon-btn" title="Voir le repo" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">Network Traffic Analysis — Deep Learning</div>
+        <p class="project-desc">
+          Classification du trafic réseau par apprentissage profond sur des flux PCAP. Extraction de features statistiques par flux, modélisation GRU/XGBoost et détection d'anomalies en quasi-temps réel.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">GRU</span>
+          <span class="tech-tag">XGBoost</span>
+          <span class="tech-tag">Scapy</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 7 -->
+    <div class="project-card reveal">
+      <div class="project-header">
+        <div class="project-icon">✈️</div>
+        <div class="project-links">
+          <a href="#" class="icon-btn" title="GitHub" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://github.com/LEROYKGU/UTrip" class="icon-btn" title="Voir le repo" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">UTrip — Version 1</div>
+        <p class="project-desc">
+          Application de planification de voyages personnalisés. L'utilisateur renseigne ses préférences et l'app génère un itinéraire optimisé avec points d'intérêt, hébergements et estimations de budget.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">Bubble.io</span>
+          <span class="tech-tag">API REST</span>
+          <span class="tech-tag">No-Code</span>
+          <span class="tech-tag">UX Design</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 8 -->
+    <div class="project-card reveal">
+      <div class="project-header">
+        <div class="project-icon">🗺️</div>
+        <div class="project-links">
+          <a href="#" class="icon-btn" title="GitHub" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://github.com/LEROYKGU/U-Trip-V2" class="icon-btn" title="Voir le repo" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">UTrip — Version 2</div>
+        <p class="project-desc">
+          Refonte complète de UTrip V1 avec une architecture améliorée, de nouvelles fonctionnalités collaboratives et une intégration de recommandations intelligentes basées sur le comportement utilisateur.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">Bubble.io</span>
+          <span class="tech-tag">API Maps</span>
+          <span class="tech-tag">Recommandation</span>
+          <span class="tech-tag">UX v2</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 9 -->
+    <div class="project-card reveal">
+      <div class="project-header">
+        <div class="project-icon">🧬</div>
+        <div class="project-links">
+          <a href="#" class="icon-btn" title="GitHub" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="#" class="icon-btn" title="Document" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">FAN — Fourier Analysis Networks (FR)</div>
+        <p class="project-desc">
+          Traduction et annotation scientifique en français du papier de recherche "FAN: Fourier Analysis Networks". Enrichissement terminologique, contextualisation francophone et notes pédagogiques.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">Deep Learning</span>
+          <span class="tech-tag">Fourier Analysis</span>
+          <span class="tech-tag">NLP</span>
+          <span class="tech-tag">Rédaction</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="section-label reveal">// 04 — Contact</div>
+    <h2 class="reveal">Travaillons ensemble</h2>
+    <div class="section-divider reveal" style="margin: 0 auto 2rem;"></div>
+    <p class="reveal">
+      Vous souhaitez collaborer sur un projet, une publication scientifique ou une opportunité professionnelle ? N'hésitez pas à me contacter.
+    </p>
+    <div class="contact-links reveal">
+      <a href="mailto:guillaumekouakou501@gmail.com" class="btn btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        M'écrire
+      </a>
+      <a href="https://github.com/LEROYKGU" target="_blank" class="btn btn-outline">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        GitHub
+      </a>
+      <a href="https://linkedin.com/in/kouakou-guillaume" target="_blank" class="btn btn-outline">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+      <a href="tel:+2250173429128" class="btn btn-outline">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.68a16 16 0 0 0 6 6l.82-.82a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Téléphone
+      </a>
+      <a href="https://www.credly.com/users/guillaume-kouakou" target="_blank" class="btn btn-outline">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+        </svg>
+        Credly
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-left">KG<span>U</span></div>
+  <div class="footer-right">© 2026 KOUAKOU Guillaume Ulrick — Tous droits réservés</div>
+</footer>
+
+<script>
+/* ── Custom Cursor ─────────────────────────────────────── */
+const cursor = document.getElementById('cursor');
+const ring   = document.getElementById('cursorRing');
+let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+
+document.addEventListener('mousemove', e => {
+  mouseX = e.clientX; mouseY = e.clientY;
+  cursor.style.left = mouseX + 'px';
+  cursor.style.top  = mouseY + 'px';
+});
+(function animRing() {
+  ringX += (mouseX - ringX) * 0.12;
+  ringY += (mouseY - ringY) * 0.12;
+  ring.style.left = ringX + 'px';
+  ring.style.top  = ringY + 'px';
+  requestAnimationFrame(animRing);
+})();
+document.querySelectorAll('a, button, .cert-card, .project-card, .skill-card, .stat-card').forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    ring.style.width  = '56px'; ring.style.height = '56px'; ring.style.opacity = '0.4';
+    cursor.style.transform = 'translate(-50%,-50%) scale(1.5)';
+  });
+  el.addEventListener('mouseleave', () => {
+    ring.style.width  = '36px'; ring.style.height = '36px'; ring.style.opacity = '0.6';
+    cursor.style.transform = 'translate(-50%,-50%) scale(1)';
+  });
+});
+
+/* ── Theme Toggle ──────────────────────────────────────── */
+const html       = document.documentElement;
+const themeBtns  = document.querySelectorAll('.theme-btn');
+
+function applyTheme(theme) {
+  html.setAttribute('data-theme', theme);
+  localStorage.setItem('kgu-theme', theme);
+  themeBtns.forEach(b => {
+    b.classList.toggle('active', b.dataset.themeTarget === theme);
+  });
+}
+
+// Restaurer le thème sauvegardé
+const saved = localStorage.getItem('kgu-theme') || 'dark';
+applyTheme(saved);
+
+themeBtns.forEach(btn => {
+  btn.addEventListener('click', () => applyTheme(btn.dataset.themeTarget));
+});
+
+/* ── Mobile Menu ───────────────────────────────────────── */
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+
+/* ── Scroll Reveal ─────────────────────────────────────── */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('visible'), i * 80);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+/* ── Nav Active Link ───────────────────────────────────── */
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 120) current = s.id;
+  });
+  navLinks.forEach(a => {
+    a.style.color = a.getAttribute('href') === '#' + current
+      ? 'var(--accent-glow)' : '';
+  });
+}, { passive: true });
+</script>
+
+</body>
+</html>
